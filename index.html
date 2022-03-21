@@ -1,3 +1,1757 @@
-<html>
-  iob764rv 
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+	
+		  <script type="text/javascript" src="app/angular.js"></script>
+
+  		  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  		  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  		  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+
+
+		<style>
+
+		html, body {
+
+			padding: 0;
+
+			margin: 0;
+
+			box-sizing: border-box;
+
+			font-family: Helvetica, Calibri, Roboto, Open Sans, sans-serif
+
+			-webkit-backface-visibility: hidden;
+
+		}
+
+		* {
+
+			box-sizing: inherit;
+
+		}
+
+		h1 {nb
+
+			text-align: center;
+
+		}
+
+		svg {
+
+			margin:auto;
+
+			display:block;
+
+		}
+
+
+
+		.circle-overlay {
+
+			font-size: 16px;
+
+			border-radius: 50%;
+
+			position: absolute;
+
+			overflow: hidden;
+
+			/*it's buggy with the foreignObject background right now*/
+
+			/*background-color: rgba(255,255,255,0.5);*/
+
+		}
+
+		.circle-overlay__inner {
+
+			text-align: center;
+
+			width: 100%;
+
+			height: 100%;
+
+		}
+
+
+
+		.hidden {
+
+			display: none;
+
+		}
+
+		.node-icon--faded {
+
+			opacity: 0.5;
+
+		}
+
+		.legend-size circle {
+
+			fill: rgb(31, 119, 180);
+
+		}
+
+	</style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Welcome</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://github.com/iob764rv ">GitHub</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://devpost.com/software/screenstaver">Devpost</a>
+            </li>
+   
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+</br>
+</br>
+    <!-- Portfolio Grid Section -->
+    <section ng-app="newsApp" class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Skills</h2>
+     <!--   <hr class="star-dark mb-5"> -->
+		
+			<div ng-view></div>
+       
+   
+        </div>
+      </div>
+    </section>
+					<body align="center">
+
+
+	<svg width="100%" height="700" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
+
+
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+	<script>
+
+
+		let data = [{
+
+			cat: 'library', name: 'Filters', value: 30,
+
+			icon: 'Filters',
+
+			desc: `
+
+				D3.js (or just D3 for Data-Driven Documents) is a JavaScript library for
+
+				producing dynamic, interactive data visualizations in web browsers.
+
+				It makes use of the widely implemented SVG, HTML5, and CSS standards.<br>
+
+				This infographic you are viewing is made with D3.
+
+			`
+
+		}, {
+
+			cat: 'library', name: 'D3', value: 10,
+
+			icon: 'D3',
+
+			desc: `
+
+				Raphaël is a cross-browser JavaScript library that draws Vector graphics for web sites.
+
+				It will use SVG for most browsers, but will use VML for older versions of Internet Explorer.
+
+			`
+
+		}, {
+
+			cat: 'library', name: 'Cadence', value: 70,
+
+			icon: 'Cadence',
+
+			desc: `
+
+			`
+
+		}, {
+
+			cat: 'library', name: 'Agile', value: 40,
+
+			icon: 'Agile',
+
+			desc: `
+
+
+			`
+
+		}, {
+
+			cat: 'library sub', name: 'Matlab', value: 30,
+
+			icon: 'Matlab',
+
+			desc: `
+
+				Analysis <strong>utility functions</strong>
+
+				.`
+
+		}, {
+
+			cat: 'library sub', name: 'C', value: 30,
+
+			icon: 'C',
+
+			desc: `
+
+				C Lang.
+
+			`
+
+		}, {
+
+			cat: 'library sub', name: 'Games', value: 20,
+
+			icon: 'Games',
+
+			desc: `
+
+				A javascript library for formatting and manipulating numbers.
+
+			`
+
+		}, {
+
+			cat: 'library sub', name: 'Numpy', value: 80,
+
+			icon: 'NumPy',
+
+			desc: `
+
+
+			`
+
+		}, {
+
+			cat: 'framework', name: 'Eclipse', value: 30,
+
+			icon: 'Eclipse',
+
+			desc: `
+
+			`
+
+		},
+		/*{
+
+			cat: 'framework', name: 'Trails.JS', value: 10,
+
+			icon: '',
+
+		},*/ {
+
+			cat: 'framework', name: 'Bootstrap CSS', value: 50,
+
+			icon: 'Bootstrap',
+
+			desc: `
+
+
+			`
+
+		}, {
+
+			cat: 'framework', name: 'mvc JS', value: 10,
+
+			icon: 'MVC',
+
+			desc: `
+				MVC
+
+			`
+
+		}, 
+		
+{
+
+			cat: 'framework', name: 'Android', value: 30,
+
+			icon: 'Android',
+
+			desc: `
+
+				Operating system
+
+			`
+
+		}, 
+		
+{
+
+			cat: 'framework', name: 'Bash', value: 30,
+
+			icon: 'Bash',
+
+			desc: `
+
+				Operating system
+
+			`
+
+		},
+		/*{
+
+			cat: 'framework', name: 'Foundation', value: 10,
+
+			icon: '',
+
+		},*/{
+
+			cat: 'framework', name: 'Python', value: 50,
+
+			icon: 'Python',
+
+			desc: `
+
+				Scipy.
+
+			`
+
+		}, {
+
+			cat: 'framework', name: 'Ruby', value: 100,
+
+			icon: 'Ruby',
+
+			desc: `
+
+				React (sometimes written React.js or ReactJS) is an open-source JavaScript framework maintained by Facebook for building user interfaces.
+
+				React processes only user interface in applications and can be used in combination with other JavaScript libraries
+
+				or frameworks such as Redux, Flux, Backbone...
+
+			`
+
+		}, /*{
+
+			cat: 'framework', name: 'SenchaTouch', value: 10,
+
+			icon: '',
+
+		},*/ {
+
+			cat: 'tooling', name: 'OpenCV', value: 30,
+
+			icon: 'OpenCV',
+
+			desc: `
+
+			Video Processing
+
+			`
+
+		}, {
+
+			cat: 'tooling', name: 'Maps', value: 70,
+
+			icon: 'Maps',
+
+			desc: `
+
+				<strong>Web development tools (devtool)</strong> allow web developers to test and debug their code.
+
+				At Nau, we use the one come with Google Chrome to debug our apps. It is one the the most powerful
+
+				and sophisticated devtool available.
+
+			`
+
+		}, {
+
+			cat: 'tooling', name: 'PyAudio', value: 30,
+
+			icon: 'PyAudio',
+
+			desc: `
+
+				Jenkins is an open source automation server. Jenkins helps to automate the non-human part of
+
+				the whole software development process, with now common things like continuous integration,
+
+				but by further empowering teams to implement the technical part of a Continuous Delivery.
+
+			`
+
+		},  {
+
+			cat: 'tooling', name: 'Distributed', value: 50,
+
+			icon: 'Distributed',
+
+			desc: `
+
+				Visual Studio Code is a cross-platform source code editor developed by Microsoft.
+
+				It includes support for debugging, embedded Git control, syntax highlighting,
+
+				intelligent code completion, snippets, and code refactoring. Its extensions eco system is
+
+				growing quickly and it is becoming the best Front End editors out there.
+
+			`
+
+		}, {
+
+			cat: 'tooling', name: 'JUnit', value: 30,
+
+			icon: 'JUnit',
+
+			desc: `
+
+				
+
+				optimization
+
+			`
+
+		}, {
+
+			cat: 'tooling', name: 'Yeoman', value: 20,
+
+			icon: 'Yeoman',
+
+			desc: `
+
+				Yeoman is an open source, command-line interface set of tools mainly used to generate
+
+				structure and scaffolding for new projects, especially in JavaScript and Node.js.
+
+				At Nau, we have developed a Yeoman generator that help quickly set up new projects aligned with
+
+				Nau's conventions and standards.
+
+			`
+
+		}, {
+
+			cat: 'tooling', name: 'Voice;Recognition', value: 30,
+
+			icon: 'Recognition',
+
+			desc: `
+
+				Sphinx voice 
+
+				
+
+			`
+
+		}, {
+
+			cat: 'tooling', name: 'Vendors', value: 30,
+
+			icon: 'Vendors',
+
+			desc: `
+
+			
+
+			`
+
+		}, {
+
+			cat: 'backend', name: 'Elastic Search', value: 10,
+
+			icon: '',
+
+			desc: `
+
+				A specialized database software for high performance search queries.
+
+			`
+
+		}, {
+
+			cat: 'backend', name: 'Signals', value: 20,
+
+			icon: 'Signals',
+
+			desc: `
+
+				A specialized database software for high performance search queries.
+
+			`
+
+		}, {
+
+			cat: 'backend', name: 'Distributed', value: 50,
+
+			icon: 'Distributed',
+
+			desc: `
+
+
+			`
+
+		}, {
+
+			cat: 'backend', name: 'KoaJS', value: 10,
+
+			icon: 'Muse',
+
+			desc: `
+
+				The advanced and improved version of ExpressJS, with leaner middlewares architecture
+
+				thanks to the avent of ES6 generators.
+
+			`
+
+		}, {
+
+			cat: 'backend', name: 'Spring', value: 30,
+
+			icon: 'Spring',
+
+			desc: `
+
+	
+
+			`
+
+		}, {
+
+			cat: 'backend', name: 'LeapMotion', value: 30,
+
+			icon: 'LeapMotion',
+
+			desc: `
+
+				High performance API development framework, built for Node.js. It has some convenient wrapper
+
+				to automatically generate admin backoffice site and API documentation page.
+
+			`
+
+		}, {
+
+			cat: 'backend', name: 'Active Directory', value: 70,
+
+			icon: 'Active Directory',
+
+			desc: `
+
+				The de-facto Database solution for JavaScript and Node.js applications. It is a light weight,
+
+				high performance NoSQL database and can be used for small and large websites.
+
+			`
+
+		}, {
+
+			cat: 'backend', name: 'xml', value: 10,
+
+			icon: 'XML',
+
+			desc: `
+
+				Node.js is a cross-platform JavaScript runtime environment.
+
+				Node.js allows creation of high performance and high concurrency websites with smaller footprint compared to
+
+				other server-side solution. Node.js ecosystem is growing very fast and is trusted by a lot of big companies who
+
+				are adopting it to enhance current products as well as for new ones.
+
+			`
+
+		},  {
+
+			cat: 'platform', name: 'Service', value: 80,
+
+			icon: 'Service',
+
+			desc: `
+
+			`
+
+		}, {
+
+			cat: 'platform', name: 'Studio', value: 50,
+
+			icon: 'Studio',
+
+			desc: `
+
+				A platform, library and tool for building hybrid mobile app.
+
+			`
+
+		}, {
+
+			cat: 'platform', name: 'JSON', value: 20,
+
+			icon: 'JSON',
+
+			desc: `
+
+		
+
+			`
+
+		}, {
+
+			cat: 'platform', name: 'Devpost', value: 18,
+
+			icon: 'Devpost',
+
+			desc: `
+
+				React Native lets you build mobile apps using only JavaScript.
+
+				It uses the same design as React, letting us compose a rich
+
+				mobile UI from declarative components.
+
+			`
+
+		}, {
+
+			cat: 'platform', name: 'Angular', value: 30,
+
+			icon: 'Angular',
+
+			desc: `
+
+
+			`
+
+		}, {
+
+			cat: 'language', name: 'CSS3', value: 100,
+
+			icon: 'CSS',
+
+			desc: `
+
+				The languages of the Web Front End. At Nau, they are in our blood and with them we can build
+
+				world-class websites with any kind of visual effects or designs requested.
+
+			`
+
+		}, {
+
+			cat: 'language', name: 'JavaScript', value: 100,
+
+			icon: 'JavaScript',
+
+			desc: `
+
+				JavaScript is the heart of modern Web front end development and essential element of any Single Page
+
+				Applications. In Nau, we invest a good deal in training developers to have good control of this universal language
+
+				and now caplable of developing full stack websites with only JavaScript.
+
+			`
+
+		}, {
+
+			cat: 'language', name: 'Waterfall', value: 20,
+
+			icon: 'Waterfall',
+
+			desc: `
+
+	
+
+			`
+
+		}, {
+
+			cat: 'language', name: 'PyPlot', value: 50,
+
+			icon: 'PyPlot',
+
+			desc: `
+			
+			`
+
+		}, {
+
+			cat: 'language', name: 'Unix', value: 20,
+
+			icon: 'Unix',
+
+			desc: `
+
+				A preprocessor language to be compiled to CSS. This language is not as popular nowadays and we
+
+				only use them when requested.
+
+			`
+
+		}, {
+
+			cat: 'language', name: 'Object Modeling', value: 70,
+
+			icon: 'Object;Modeling',
+
+			desc: `
+
+				This is our main CSS preprocessor language helping us lay structured foundation to CSS as well
+
+				as assisting on writing more convenient BEM anotations.
+
+			`
+
+		}, {
+
+			cat: 'language', name: 'C#', value: 30,
+
+			icon: 'C#',
+
+			desc: `
+
+				The strict-typing flavor of ECMAScript, always requires a compiler to compile to vanilla JavaScript
+
+				but the type checking and other syntactical sugar are exceptional. Right now, we only use it for
+
+				Angular 2 projects when needed.
+
+			`
+
+		}, {
+
+			cat: 'workflow', name: 'Powershell', value: 100,
+
+			icon: 'Powershell',
+
+			desc: `
+
+				A set of guidelines, presets, configs and stadard documentation for Nau developers.
+
+				Please visit the document site at: <a href='http://code.naustud.io' target='_blank'>code.naustud.io</a>
+
+			`
+
+		}, {
+
+			cat: 'workflow', name: 'Mobile First', value: 100,
+
+			icon: 'Mobile',
+
+			desc: `
+
+				This is one of our most important principle for web and mobile development.
+
+				More details will be discussed in blog later.
+
+			`
+
+		} , 
+		 {
+
+			cat: 'workflow', name: 'LaTeX', value: 70,
+
+			icon: 'LaTeX',
+
+			desc: `
+
+				This is one of our most important principle for web and mobile development.
+
+				More details will be discussed in blog later.
+
+			`
+
+		} ,{
+
+			cat: 'workflow', name: 'Transactions', value: 50,
+
+			icon: 'Transactions',
+
+			desc: `
+
+		
+			`
+
+		}, /*{
+
+			cat: 'workflow', name: 'Browserify', value: 10,
+
+			icon: '',
+
+		},*/  {
+
+			cat: 'workflow', name: 'Object Oriented', value: 30,
+
+			icon: 'Object;Oriented',
+
+			desc: `
+
+				Based on an existing best practice document for HTML and CSS. We're adopting it as our standards
+
+				and guideline.
+
+			`
+
+		}, {
+
+			cat: 'workflow', name: 'Yeoman', value: 20,
+
+			icon: 'Yeoman',
+
+			desc: `
+
+				Scaffolding
+
+			`
+
+		}, {
+
+			cat: 'workflow', name: 'RealTime', value: 70,
+
+			icon: 'Real Time',
+
+			desc: `
+
+				Our code version control tool is Git, and Gitflow is one of its workflow standard which
+
+				ensure good collaboration and avoid conflict-resolving efforts. For more info, visit: code.naustud.io
+
+			`
+
+		}, {
+
+			cat: 'workflow', name: 'Systems', value: 50,
+
+			icon: 'Systems',
+
+			desc: `
+
+				GulpJS is a task automation tools written for Node.js. It is among the most popular
+
+				Front End and Node project automation tools nowadays
+
+			`
+
+		},  {
+
+			cat: 'workflow', name: 'FinTech', value: 20,
+
+			icon: 'FinTech',
+
+			desc: `
+
+				Currencies, technology
+
+			`
+
+		}, 
+		
+		 {
+
+			cat: 'workflow', name: 'Crypto', value: 20,
+
+			icon: 'Crypto',
+
+			desc: `
+
+				Currencies, technology
+
+			`
+
+		},
+		{
+
+			cat: 'workflow', name: 'MS Office', value: 30,
+
+			icon: 'MS Office',
+
+			desc: `
+
+				A module bundler library that is becoming de-facto tool to use in ReactJS or SPA apps nowadays.
+
+			`
+
+		}, {
+
+			cat: 'legacy', name: 'Mosfet', value: 30,
+
+			icon: 'Mosfet',
+
+			desc: `
+
+				Angular 1. Deprecated
+
+			`
+
+		}, {
+
+			cat: 'legacy', name: 'API', value: 30,
+
+			icon: 'API',
+
+			desc: `
+
+				API
+
+			`
+
+		}, {
+
+			cat: 'legacy', name: 'Smart Car', value: 30,
+
+			icon: 'Smart Car',
+
+			desc: `
+
+				Grunt task automation tool. Deprecated
+
+			`
+
+		}, {
+
+			cat: 'legacy', name: 'SQL', value: 50,
+
+			icon: 'SQL',
+
+			desc: `
+
+				Database 
+			`
+
+		}, {
+
+			cat: 'legacy', name: 'jupyter', value: 40,
+
+			icon: 'Jupyter',
+
+			desc: `
+
+				AMD module loader. Deprecated and replaced by ES module and Webpack.
+
+			`
+
+		},{
+
+			cat: 'legacy tooling', name: 'googlecolab', value: 20,
+
+			icon: 'Colab',
+
+			desc: `
+
+				A quick test web server based on Node.js, deprecated and replaced by live-server.
+
+			`
+
+		}, {
+
+			cat: 'legacy tooling', name: 'Java', value: 40,
+
+			icon: 'Java',
+
+			desc: `
+
+			
+
+				or .
+
+			`
+
+		}, {
+
+			cat: 'legacy tooling', name: 'GitHub', value: 30,
+
+			icon: 'GitHub',
+
+			desc: `
+
+				https://github.com/iob764rv 
+
+			`
+
+		}, {
+
+			cat: 'legacy tooling', name: 'server', value: 20,
+
+			icon: 'Server',
+
+			desc: `
+
+				A quick test web server based on Node.js, deprecated and replaced by live-server.
+
+			`
+
+		}, {
+
+			cat: 'legacy tooling', name: 'Pandas', value: 20,
+
+			icon: 'Pandas',
+
+			desc: `
+
+				Python library
+
+			`
+
+		}, {
+
+			cat: 'legacy tooling', name: 'Hibernate', value: 20,
+
+			icon: 'Hibernate',
+
+			desc: `
+
+				A propritery auto-reload solution for web developers, now deprecated in favor of live-server and
+
+				hot module reload in Webpack.
+
+			`
+
+		}];
+
+	</script>
+
+
+
+	<script>
+
+		let svg = d3.select('svg');
+
+		let width = document.body.clientWidth; // get width in pixels
+
+		let height = +svg.attr('height');
+
+		let centerX = width * 0.5;
+
+		let centerY = height * 0.5;
+
+		let strength = 0.05;
+
+		let focusedNode;
+
+
+
+		let format = d3.format(',d');
+
+
+
+		let scaleColor = d3.scaleOrdinal(d3.schemeCategory20);
+
+
+
+		// use pack to calculate radius of the circle
+
+		let pack = d3.pack()
+
+			.size([width , height ])
+
+			.padding(1.5);
+
+
+
+		let forceCollide = d3.forceCollide(d => d.r + 1);
+
+
+
+		// use the force
+
+		let simulation = d3.forceSimulation()
+
+			// .force('link', d3.forceLink().id(d => d.id))
+
+			.force('charge', d3.forceManyBody())
+
+			.force('collide', forceCollide)
+
+			// .force('center', d3.forceCenter(centerX, centerY))
+
+			.force('x', d3.forceX(centerX ).strength(strength))
+
+			.force('y', d3.forceY(centerY ).strength(strength));
+
+
+
+		// reduce number of circles on mobile screen due to slow computation
+
+		if ('matchMedia' in window && window.matchMedia('(max-device-width: 767px)').matches) {
+
+			data = data.filter(el => {
+
+				return el.value >= 50;
+
+			});
+
+		}
+
+
+
+		let root = d3.hierarchy({ children: data })
+
+			.sum(d => d.value);
+
+
+
+		// we use pack() to automatically calculate radius conveniently only
+
+		// and get only the leaves
+
+		let nodes = pack(root).leaves().map(node => {
+
+			console.log('node:', node.x, (node.x - centerX) * 2);
+
+			const data = node.data;
+
+			return {
+
+				x: centerX + (node.x - centerX) * 3, // magnify start position to have transition to center movement
+
+				y: centerY + (node.y - centerY) * 3,
+
+				r: 0, // for tweening
+
+				radius: node.r, //original radius
+
+				id: data.cat + '.' + (data.name.replace(/\s/g, '-')),
+
+				cat: data.cat,
+
+				name: data.name,
+
+				value: data.value,
+
+				icon: data.icon,
+
+				desc: data.desc,
+
+			}
+
+		});
+
+		simulation.nodes(nodes).on('tick', ticked);
+
+
+
+		svg.style('background-color', '#eee');
+
+		let node = svg.selectAll('.node')
+
+			.data(nodes)
+
+			.enter().append('g')
+
+			.attr('class', 'node')
+
+			.call(d3.drag()
+
+				.on('start', (d) => {
+
+					if (!d3.event.active) simulation.alphaTarget(0.2).restart();
+
+					d.fx = d.x;
+
+					d.fy = d.y;
+
+				})
+
+				.on('drag', (d) => {
+
+					d.fx = d3.event.x;
+
+					d.fy = d3.event.y;
+
+				})
+
+				.on('end', (d) => {
+
+					if (!d3.event.active) simulation.alphaTarget(0);
+
+					d.fx = null;
+
+					d.fy = null;
+
+				}));
+
+
+
+		node.append('circle')
+
+			.attr('id', d => d.id)
+
+			.attr('r', 0)
+
+			.style('fill', d => scaleColor(d.cat))
+
+			.transition().duration(2000).ease(d3.easeElasticOut)
+
+				.tween('circleIn', (d) => {
+
+					let i = d3.interpolateNumber(0, d.radius);
+
+					return (t) => {
+
+						d.r = i(t);
+
+						simulation.force('collide', forceCollide);
+
+					}
+
+				})
+
+
+
+		node.append('clipPath')
+
+			.attr('id', d => `clip-${d.id}`)
+
+			.append('use')
+
+			.attr('xlink:href', d => `#${d.id}`);
+
+
+
+		// display text as circle icon
+
+		node.filter(d => !String(d.icon).includes('img/'))
+
+			.append('text')
+
+			.classed('node-icon', true)
+
+			.attr('clip-path', d => `url(#clip-${d.id})`)
+
+			.selectAll('tspan')
+
+			.data(d => d.icon.split(';'))
+
+			.enter()
+
+				.append('tspan')
+
+				.attr('x', 0)
+
+				.attr('y', (d, i, nodes) => (13 + (i - nodes.length / 2 - 0.5) * 10))
+
+				.text(name => name);
+
+
+
+		// display image as circle icon
+
+		node.filter(d => String(d.icon).includes('img/'))
+
+			.append('image')
+
+			.classed('node-icon', true)
+
+			.attr('clip-path', d => `url(#clip-${d.id})`)
+
+			.attr('xlink:href', d => d.icon)
+
+			.attr('x', d => - d.radius * 0.7)
+
+			.attr('y', d => - d.radius * 0.7)
+
+			.attr('height', d => d.radius * 2 * 0.7)
+
+			.attr('width', d => d.radius * 2 * 0.7)
+
+
+
+		node.append('title')
+
+			.text(d => (d.cat + '::' + d.name + '\n' + format(d.value)));
+
+
+
+		let legendOrdinal = d3.legendColor()
+
+			.scale(scaleColor)
+
+			.shape('circle');
+
+
+
+		let legend = svg.append('g')
+
+			.classed('legend-color', true)
+
+			.attr('text-anchor', 'start')
+
+			.attr('transform','translate(20,30)')
+
+			.style('font-size','12px')
+
+			.call(legendOrdinal);
+
+
+
+		let sizeScale = d3.scaleOrdinal()
+
+  			.domain(['less use', 'more use'])
+
+  			.range([5, 10] );
+
+
+
+		let legendSize = d3.legendSize()
+
+			.scale(sizeScale)
+
+			.shape('circle')
+
+			.shapePadding(10)
+
+			.labelAlign('end');
+
+
+
+		let legend2 = svg.append('g')
+
+			.classed('legend-size', true)
+
+			.attr('text-anchor', 'start')
+
+			.attr('transform', 'translate(150, 25)')
+
+			.style('font-size', '12px')
+
+			.call(legendSize);
+
+
+
+
+
+		/*
+
+		<foreignObject class="circle-overlay" x="10" y="10" width="100" height="150">
+
+			<div class="circle-overlay__inner">
+
+				<h2 class="circle-overlay__title">ReactJS</h2>
+
+				<p class="circle-overlay__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, sunt, aspernatur. Autem repudiandae, laboriosam. Nulla quidem nihil aperiam dolorem repellendus pariatur, quaerat sed eligendi inventore ipsa natus fugiat soluta doloremque!</p>
+
+			</div>
+
+		</foreignObject>
+
+		*/
+
+		let infoBox = node.append('foreignObject')
+
+			.classed('circle-overlay hidden', true)
+
+			.attr('x', -350 * 0.5 * 0.8)
+
+			.attr('y', -350 * 0.5 * 0.8)
+
+			.attr('height', 350 * 0.8)
+
+			.attr('width', 350 * 0.8)
+
+				.append('xhtml:div')
+
+				.classed('circle-overlay__inner', true);
+
+
+
+		infoBox.append('h2')
+
+			.classed('circle-overlay__title', true)
+
+			.text(d => d.name);
+
+
+
+		infoBox.append('p')
+
+			.classed('circle-overlay__body', true)
+
+			.html(d => d.desc);
+
+
+
+
+
+		node.on('click', (currentNode) => {
+
+			d3.event.stopPropagation();
+
+			console.log('currentNode', currentNode);
+
+			let currentTarget = d3.event.currentTarget; // the <g> el
+
+
+
+			if (currentNode === focusedNode) {
+
+				// no focusedNode or same focused node is clicked
+
+				return;
+
+			}
+
+			let lastNode = focusedNode;
+
+			focusedNode = currentNode;
+
+
+
+			simulation.alphaTarget(0.2).restart();
+
+			// hide all circle-overlay
+
+			d3.selectAll('.circle-overlay').classed('hidden', true);
+
+			d3.selectAll('.node-icon').classed('node-icon--faded', false);
+
+
+
+			// don't fix last node to center anymore
+
+			if (lastNode) {
+
+				lastNode.fx = null;
+
+				lastNode.fy = null;
+
+				node.filter((d, i) => i === lastNode.index)
+
+					.transition().duration(2000).ease(d3.easePolyOut)
+
+					.tween('circleOut', () => {
+
+						let irl = d3.interpolateNumber(lastNode.r, lastNode.radius);
+
+						return (t) => {
+
+							lastNode.r = irl(t);
+
+						}
+
+					})
+
+					.on('interrupt', () => {
+
+						lastNode.r = lastNode.radius;
+
+					});
+
+			}
+
+
+
+			// if (!d3.event.active) simulation.alphaTarget(0.5).restart();
+
+
+
+			d3.transition().duration(2000).ease(d3.easePolyOut)
+
+				.tween('moveIn', () => {
+
+					console.log('tweenMoveIn', currentNode);
+
+					let ix = d3.interpolateNumber(currentNode.x, centerX);
+
+					let iy = d3.interpolateNumber(currentNode.y, centerY);
+
+					let ir = d3.interpolateNumber(currentNode.r, centerY * 0.5);
+
+					return function (t) {
+
+						// console.log('i', ix(t), iy(t));
+
+						currentNode.fx = ix(t);
+
+						currentNode.fy = iy(t);
+
+						currentNode.r = ir(t);
+
+						simulation.force('collide', forceCollide);
+
+					};
+
+				})
+
+				.on('end', () => {
+
+					simulation.alphaTarget(0);
+
+					let $currentGroup = d3.select(currentTarget);
+
+					$currentGroup.select('.circle-overlay')
+
+						.classed('hidden', false);
+
+					$currentGroup.select('.node-icon')
+
+						.classed('node-icon--faded', true);
+
+
+
+				})
+
+				.on('interrupt', () => {
+
+					console.log('move interrupt', currentNode);
+
+					currentNode.fx = null;
+
+					currentNode.fy = null;
+
+					simulation.alphaTarget(0);
+
+				});
+
+
+
+		});
+
+
+
+		// blur
+
+		d3.select(document).on('click', () => {
+
+			let target = d3.event.target;
+
+			// check if click on document but not on the circle overlay
+
+			if (!target.closest('#circle-overlay') && focusedNode) {
+
+				focusedNode.fx = null;
+
+				focusedNode.fy = null;
+
+				simulation.alphaTarget(0.2).restart();
+
+				d3.transition().duration(2000).ease(d3.easePolyOut)
+
+					.tween('moveOut', function () {
+
+						console.log('tweenMoveOut', focusedNode);
+
+						let ir = d3.interpolateNumber(focusedNode.r, focusedNode.radius);
+
+						return function (t) {
+
+							focusedNode.r = ir(t);
+
+							simulation.force('collide', forceCollide);
+
+						};
+
+					})
+
+					.on('end', () => {
+
+						focusedNode = null;
+
+						simulation.alphaTarget(0);
+
+					})
+
+					.on('interrupt', () => {
+
+						simulation.alphaTarget(0);
+
+					});
+
+
+
+				// hide all circle-overlay
+
+				d3.selectAll('.circle-overlay').classed('hidden', true);
+
+				d3.selectAll('.node-icon').classed('node-icon--faded', false);
+
+			}
+
+		});
+
+
+
+		function ticked() {
+
+			node
+
+				.attr('transform', d => `translate(${d.x},${d.y})`)
+
+				.select('circle')
+
+					.attr('r', d => d.r);
+
+		}
+
+	</script>
+
+</body>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4"></h4>
+            <p class="lead mb-0"></p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <ul class="list-inline mb-0">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+	<!--
+      <div class="container">
+        <small>Copyright &copy; Your Website 2018</small>
+      </div>
+	  -->
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+       
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+      
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+       
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+  </body>
+
+</html>
